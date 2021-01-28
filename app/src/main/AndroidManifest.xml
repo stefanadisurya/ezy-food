@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ezyfood">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EzyFood">
+        <activity android:name=".TopUpActivity" android:parentActivityName=".MainActivity" android:label="Top Up"></activity>
+        <activity android:name=".MyOrderFoodsActivity" android:parentActivityName=".FoodsActivity" android:label="My Order - Foods"/>
+        <activity
+            android:name=".OrderFoodsActivity"
+            android:label="Details"
+            android:parentActivityName=".FoodsActivity" />
+        <activity
+            android:name=".FoodsActivity"
+            android:label="Foods"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MyOrderSnacksActivity"
+            android:label="My Order - Snacks"
+            android:parentActivityName=".SnacksActivity" />
+        <activity
+            android:name=".OrderSnacksActivity"
+            android:label="Details"
+            android:parentActivityName=".SnacksActivity" />
+        <activity
+            android:name=".SnacksActivity"
+            android:label="Snacks"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MyOrderActivity"
+            android:label="My Order - Drinks"
+            android:parentActivityName=".DrinksActivity" />
+        <activity
+            android:name=".OrderActivity"
+            android:label="Details"
+            android:parentActivityName=".DrinksActivity" />
+        <activity
+            android:name=".DrinksActivity"
+            android:label="Drinks"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
